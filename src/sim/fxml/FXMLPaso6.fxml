@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="731.0" style="-fx-background-color: #1E8F6C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sim.controller.FXMLPaso6Controller">
+   <children>
+      <Button fx:id="btnStep6" layoutX="586.0" layoutY="376.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #DB7918;" text="Siguiente" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Button>
+      <Label layoutY="-5.0" prefHeight="554.0" prefWidth="249.0" style="-fx-alignment: center; -fx-border-color: #8F2544; -fx-background-color: #8F2544; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0);" textFill="WHITE" />
+      <Label contentDisplay="CENTER" layoutX="27.0" layoutY="170.0" prefHeight="205.0" prefWidth="47.0" text="P&#10;A&#10;S&#10;O" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="44.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="74.0" layoutY="170.0" prefHeight="205.0" prefWidth="47.0" text="6" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Berlin Sans FB" size="96.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="74.0" layoutY="307.0" prefHeight="84.0" prefWidth="162.0" text="M   E   F" textAlignment="CENTER">
+         <font>
+            <Font name="Corbel Bold" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#eb3c3c" />
+                  <Stop color="#fffb00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="520.0" fitWidth="334.0" layoutX="236.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/paso6.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="129.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/dino.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="249.0" layoutY="432.0" prefHeight="120.0" prefWidth="481.0" style="-fx-alignment: center; -fx-border-color: #2A227A; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 25, 0, 0, 0);" text="Llegamos al sexto paso del metodo de los elementos finitos, en este sexto paso &#10;tenemos que realizar la integracion por partes de dos ecuaciones estas ecuaciones &#10;son las que en el paso 5 poseen ∇^2  ya que cuando tienen esta forma se &#10;necesita cambiar ambas ecuaciones, dandonos como resultado dos nuevas &#10;matrices negativas que son -K , -J&#10;&#10;" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

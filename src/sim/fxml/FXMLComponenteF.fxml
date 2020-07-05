@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="731.0" style="-fx-background-color: #1E8F6C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sim.controller.FXMLComponenteFController">
+   <children>
+      <ImageView fitHeight="329.0" fitWidth="342.0" layoutX="-9.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutY="351.0" prefHeight="201.0" prefWidth="781.0" style="-fx-alignment: center; -fx-border-color: #871D01; -fx-background-color: #871D01; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0);" textFill="WHITE" />
+      <Label layoutX="7.0" layoutY="355.0" prefHeight="193.0" prefWidth="400.0" style="-fx-alignment: center; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 25, 0, 0, 0);" text="En este caso hablaremos de la matriz H y matriz F, estas matrices &#10;son muy sencillas debido a que solo poseen un N^t, entonces lo &#10;que se realiza es hacer la integral triple para obtener nuestra &#10;matriz y luego expresar como quedarian nuestra nuevas matrices &#10;de F y H" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="217.0" fitWidth="347.0" layoutX="407.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/componenteF.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="223.0" fitWidth="350.0" layoutX="34.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/componenteH.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="543.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/dino.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnStepF" layoutX="637.0" layoutY="242.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #04103B;" text="Siguiente" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Button>
+      <Label contentDisplay="CENTER" layoutX="133.0" layoutY="106.0" prefHeight="77.0" prefWidth="164.0" text="MATRIZ   H&#10;" textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="32.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2836ff" />
+                  <Stop color="#f01f1f" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="416.0" layoutY="229.0" prefHeight="77.0" prefWidth="164.0" text="MATRIZ  F&#10;" textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="32.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#4520e8" />
+                  <Stop color="#f21e1e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="206.0" layoutY="14.0" prefHeight="77.0" prefWidth="369.0" text="Definicion de componentes&#10;" textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

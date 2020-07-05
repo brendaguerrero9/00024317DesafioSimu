@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="731.0" style="-fx-background-color: #1E8F6C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sim.controller.FXMLEnsamblajeController">
+   <children>
+      <Label layoutY="190.0" prefHeight="193.0" prefWidth="748.0" style="-fx-alignment: center; -fx-border-color: #C21548; -fx-background-color: #C21548; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0);" textFill="WHITE" />
+      <ImageView fitHeight="406.0" fitWidth="603.0" layoutX="119.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Ensamblaje.gif" />
+         </image>
+      </ImageView>
+      <Label contentDisplay="CENTER" layoutX="119.0" layoutY="58.0" prefHeight="77.0" prefWidth="603.0" text="E   N   S   A   M   B   L   A   J   E" textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="48.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#3ebccd" />
+                  <Stop color="#e7f82b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/dino.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnStepEnsam" layoutX="367.0" layoutY="485.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #04103B;" text="Siguiente" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

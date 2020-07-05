@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="731.0" style="-fx-background-color: #1E8F6C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sim.controller.FXMLTablaController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="350.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/dino.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnTabla" layoutX="585.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #DB4470;" text="Siguiente" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Button>
+      <Label layoutY="270.0" prefHeight="215.0" prefWidth="762.0" style="-fx-alignment: center; -fx-border-color: #DB7918; -fx-background-color: #DB7918; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0);" textFill="WHITE" />
+      <Label layoutX="539.0" layoutY="295.0" prefHeight="166.0" prefWidth="177.0" style="-fx-alignment: center; -fx-border-color: #FFF; -fx-background-color: #FFF;" text="Llegamos a nuestra&#10;siguiente parada, aca se &#10;observa la tabla de&#10;conectividades que se&#10;obtuvo a partir de el &#10;mallado que se le realizo al &#10;cubo, para realizar la tabla&#10;nos apoyamos de Gid." textAlignment="JUSTIFY">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="190.0" fitWidth="498.0" layoutX="14.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/tablaConec.png" />
+         </image>
+      </ImageView>
+      <Label contentDisplay="CENTER" layoutX="276.0" layoutY="46.0" prefHeight="40.0" prefWidth="289.0" text="Tabla de conectividades" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="28.0" />
+         </font>
+      </Label>
+      
+   </children>
+</AnchorPane>
