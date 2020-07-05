@@ -7,6 +7,7 @@ package sim.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -15,8 +16,10 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.media.AudioClip;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 /**
  * FXML Controller class
@@ -37,12 +40,21 @@ public class FXMLPaso6Controller implements Initializable {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.setTitle("MEF 3D");
+        stage.getIcons().add(new Image("/img/dino.png"));
         ((Node)(event.getSource())).getScene().getWindow().hide();
         
         
         AudioClip sound = new AudioClip(this.getClass().getResource("/effects/sonidoButton.mp3").toExternalForm());
         sound.play();
     
+        //Transicion pag
+        FadeTransition fadeIn = new FadeTransition(Duration.seconds(2), root);
+        fadeIn.setFromValue(0);
+        fadeIn.setToValue(10);
+        fadeIn.setCycleCount(1);
+        fadeIn.setAutoReverse(true);
+        fadeIn.play();
     }
 
     /**

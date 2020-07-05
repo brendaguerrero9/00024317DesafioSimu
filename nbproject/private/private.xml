@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/marce/Documents/JAVA/sim/src/sim/controller/FXMLPaso6Controller.java</file>
-            <file>file:/C:/Users/marce/Documents/JAVA/sim/src/sim/controller/FXMLDespedidaController.java</file>
-            <file>file:/C:/Users/marce/Documents/JAVA/sim/src/sim/fxml/FXMLDespedida.fxml</file>
-            <file>file:/C:/Users/marce/Documents/JAVA/sim/src/sim/controller/FXMLComponenteFController.java</file>
+            <file>file:/C:/Users/marce/Documents/JAVA/sim/src/sim/controller/FXMLContornoController.java</file>
+            <file>file:/C:/Users/marce/Documents/JAVA/sim/src/sim/fxml/FXMLContorno.fxml</file>
             <file>file:/C:/Users/marce/Documents/JAVA/sim/src/sim/controller/FXMLEnsamblajeController.java</file>
+            <file>file:/C:/Users/marce/Documents/JAVA/sim/src/sim/fxml/FXMLEnsamblaje.fxml</file>
         </group>
     </open-files>
 </project-private>

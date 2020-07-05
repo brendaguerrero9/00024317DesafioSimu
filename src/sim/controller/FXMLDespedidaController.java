@@ -27,7 +27,8 @@ import javafx.util.Duration;
  */
 public class FXMLDespedidaController implements Initializable {
     
-    @FXML
+    
+     @FXML
     public Button btnExit;
     
     @FXML
@@ -37,6 +38,7 @@ public class FXMLDespedidaController implements Initializable {
          stage.close();
        
     }
+    
 
     /**
      * Initializes the controller class.

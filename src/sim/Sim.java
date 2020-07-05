@@ -9,6 +9,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.media.AudioClip;
 import javafx.stage.Stage;
 
@@ -31,8 +32,9 @@ public class Sim extends Application {
         sound.setVolume(0.3);
         sound.play();
         stage.show();
-        stage.setTitle("Bienvenidos");
-       
+        stage.setTitle("MEF 3D");
+        stage.getIcons().add(new Image("/img/dino.png"));
+     
     }
 
     /**

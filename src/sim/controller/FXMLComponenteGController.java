@@ -15,6 +15,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.media.AudioClip;
 import javafx.stage.Stage;
 
@@ -37,6 +38,8 @@ public class FXMLComponenteGController implements Initializable {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        stage.setTitle("MEF 3D");
+        stage.getIcons().add(new Image("/img/dino.png"));
         ((Node)(event.getSource())).getScene().getWindow().hide();
         
         AudioClip sound = new AudioClip(this.getClass().getResource("/effects/sonidoButton.mp3").toExternalForm());
